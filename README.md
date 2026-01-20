@@ -1,0 +1,2 @@
+# polyself
+rely on thyself
