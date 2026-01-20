@@ -1,9 +1,10 @@
 # polyself
 rely on thyself
 
-- uses raw assembly to re-create libc
+- uses raw assembly to re-create parts of libc
 - do NOT actually use this for anything
 - learning purposes
+- x86-64; targetted for linux
 
 # to build this project:
 `make`
@@ -12,4 +13,4 @@ rely on thyself
 `make run`
 
 
-**please dont actually use this for anything**
+⚠️ **DO NOT* use this project for production*  ⚠️
