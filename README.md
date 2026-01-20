@@ -1,6 +1,10 @@
 # polyself
 rely on thyself
 
+- uses raw assembly to re-create libc
+- do NOT actually use this for anything
+- learning purposes
+
 # to build this project:
 `make`
 
