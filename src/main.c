@@ -1,5 +1,7 @@
-#include "print.h"
+#include "io.h"
 #include "string.h"
+
+typedef unsigned long size_t;
 
 extern void quit();
 
@@ -21,6 +23,10 @@ void _start(void) {
   char dest[6] = "hello";
 
   strcpy(src, dest);
+
+  char buf[32];
+  read(buf, 15);
+  puts(buf);
 
   quit();
 }

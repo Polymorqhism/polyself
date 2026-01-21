@@ -2,14 +2,14 @@ CC = clang
 ASM = nasm
 FLAGS = -Wall -Wextra -nostdlib -fno-builtin -fno-stack-protector
 
-OBJS = build/main.o build/print.o build/string.o build/math.o build/quit.o build/putstring.o
+OBJS = build/main.o build/io.s.o build/string.o build/math.o build/quit.o build/io.o
 BIN  = build/poly
 
 $(BIN): $(OBJS)
 	mkdir -p build
 	$(CC) -nostdlib $(OBJS) -o $(BIN)
 
-build/main.o: src/main.c src/print.h
+build/main.o: src/main.c src/io.h
 	$(CC) $(FLAGS) -c $< -o $@
 
 build/string.o: src/string.c src/string.h
@@ -18,7 +18,7 @@ build/string.o: src/string.c src/string.h
 build/math.o: src/math.c src/math.h
 	$(CC) $(FLAGS) -c $< -o $@
 
-build/print.o: src/print.c src/print.h
+build/io.o: src/io.c src/io.h
 	$(CC) $(FLAGS) -c $< -o $@
 
 
@@ -27,7 +27,7 @@ build/print.o: src/print.c src/print.h
 build/quit.o: src/quit.s
 	$(ASM) -f elf64 $< -o $@
 
-build/putstring.o: src/putstring.s
+build/io.s.o: src/io.s
 	$(ASM) -f elf64 $< -o $@
 
 .PHONY: clean run

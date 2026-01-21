@@ -1,13 +1,14 @@
-#include "print.h"
+#include "io.h"
 #include "string.h"
 
 
-extern void putstring(char *buf, unsigned long long size);
+extern void read(char *buf, unsigned long long size);
+extern void write(char *buf, unsigned long long size);
 
 
 void puts(char *buf) {
   size_t size = strlen(buf);
-  putstring(buf, size);
+  write(buf, size);
 }
 
 
@@ -15,5 +16,5 @@ void puti(int var) {
   char buf[32];
   itoa(var, buf);
   unsigned int size = strlen(buf);
-  putstring(buf, size);
+  write(buf, size);
 }
