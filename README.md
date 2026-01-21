@@ -8,6 +8,9 @@
 - requires clang (gcc if Makefile is tweaked)
 
 
+## printing:
+*note that there is no `printf()` functionality, use `puti()` and `puts()` for integers and strings respectively*
+
 # to build this project:
 `make`
 

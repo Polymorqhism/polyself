@@ -1,1 +1,2 @@
-void print(char *string);
+void puts(char *string);
+void puti(int var);

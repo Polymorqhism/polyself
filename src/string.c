@@ -32,3 +32,14 @@ int strcpy(char *source, char *destination) {
   return 0;
 }
 
+void itoa_r(int n, char *s, int *i) {
+    if (n < 0) s[(*i)++] = '-', n = -n;
+    if (n / 10) itoa_r(n/10, s, i);
+    s[(*i)++] = '0' + n % 10;
+}
+
+void itoa(int n, char *s) {
+    int i = 0;
+    itoa_r(n, s, &i);
+    s[i] = '\0';
+}
