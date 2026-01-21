@@ -24,9 +24,10 @@
     - tbd
 
 
-
 # to build this project:
-`make` \n
+
+`make`
+
 `make clean` to clean 
 
 # to run this project:
