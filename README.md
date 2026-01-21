@@ -11,8 +11,23 @@
 ## printing:
 *note that there is no `printf()` functionality, use `puti()` and `puts()` for integers and strings respectively*
 
+- string:
+    - `unsigned int strlen(const char *string);`
+    - `int strcmp(const char *string1, const char *string2);`
+    - `int strcpy(char *source, char *destination);`
+    - `void itoa(int n, char *s);`
+- print:
+    - `void puts(char *string);`
+    - `void puti(int var);`
+
+- math:
+    - tbd
+
+
+
 # to build this project:
 `make`
+`make clean` to clean 
 
 # to run this project:
 `make run`
