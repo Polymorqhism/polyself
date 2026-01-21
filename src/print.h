@@ -1,2 +1,3 @@
-void puts(char *string);
-void puti(int var);
+extern void putstring(char *buf, unsigned long long size);
+void puts(char *buf);
+void puti(int number);

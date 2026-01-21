@@ -1,6 +1,6 @@
 #include "string.h"
 
-unsigned int strlen(const char *string) {
+size_t strlen(const char *string) {
   unsigned int s = 0;
   while(string[s]) s++;
   return s;
