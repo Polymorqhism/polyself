@@ -17,6 +17,8 @@
     - `int strcpy(char *source, char *destination);`
     - `void itoa(int n, char *s);`
 - print:
+    - `extern void write(char *buf, unsigned long long size);`
+    - `extern void read(char *buf, unsigned long long size);`
     - `void puts(char *string);`
     - `void puti(int var);`
 
