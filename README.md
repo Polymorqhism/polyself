@@ -26,7 +26,7 @@
 
 
 # to build this project:
-`make`
+`make` \n
 `make clean` to clean 
 
 # to run this project:
