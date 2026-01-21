@@ -16,7 +16,7 @@
     - `int strcmp(const char *string1, const char *string2);`
     - `int strcpy(char *source, char *destination);`
     - `void itoa(int n, char *s);`
-- print:
+- io:
     - `extern void write(char *buf, unsigned long long size);`
     - `extern void read(char *buf, unsigned long long size);`
     - `void puts(char *string);`
