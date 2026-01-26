@@ -22,7 +22,7 @@
     - `void puts(char *string);`
     - `void puti(int var);`
 
-- math:
+- math, memory:
     - tbd
 
 
