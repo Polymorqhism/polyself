@@ -30,6 +30,7 @@ build/quit.o: src/quit.s
 build/io.s.o: src/io.s
 	$(ASM) -f elf64 $< -o $@
 
+
 .PHONY: clean run
 clean:
 	rm -rf build/*
