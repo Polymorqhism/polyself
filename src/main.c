@@ -5,7 +5,8 @@ typedef unsigned long size_t;
 
 extern void quit();
 
-void _start(void) {
+void _start(void)
+{
   puts("hello world!\n");
   const char *s1 = "hello";
   const char *s2 = "hell";
