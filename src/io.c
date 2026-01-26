@@ -1,19 +1,27 @@
 #include "io.h"
 #include "string.h"
+#include "syscall.h"
 
-extern void read(char *buf, unsigned long long size);
-extern void write(char *buf, unsigned long long size);
+void write(char *buf, size_t size)
+{
+    syscall6(1, 1, (long) buf, size, 0, 0, 0);
+}
+
+void read(char *buf, size_t size)
+{
+    syscall6(0, 0, (long) buf, size, 0, 0, 0);
+}
 
 void puts(char *buf)
 {
-  size_t size = strlen(buf);
-  write(buf, size);
+    size_t size = strlen(buf);
+    write(buf, size);
 }
 
 void puti(int var)
 {
-  char buf[32];
-  itoa(var, buf);
-  unsigned int size = strlen(buf);
-  write(buf, size);
+    char buf[32];
+    itoa(var, buf);
+    unsigned int size = strlen(buf);
+    write(buf, size);
 }

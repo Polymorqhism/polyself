@@ -22,14 +22,14 @@ int strcmp(const char *string1, const char *string2)
 
 int strcpy(char *source, char *destination)
 {
-  unsigned int i = 0;
+    unsigned int i = 0;
 
-  while(source[i] != '\0') {
-    destination[i] = source[i];
-    i++;
-  }
-  destination[i] = '\0';
-  return 0;
+    while(source[i] != '\0') {
+        destination[i] = source[i];
+        i++;
+    }
+    destination[i] = '\0';
+    return 0;
 }
 
 

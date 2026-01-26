@@ -1,4 +1,6 @@
-extern void write(char *buf, unsigned long long size);
-extern void read(char *buf, unsigned long long size);
+#include "types.h"
+
 void puts(char *buf);
 void puti(int number);
+void write(char *buf, size_t size);
+void read(char *buf, size_t size);

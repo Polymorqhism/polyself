@@ -2,7 +2,7 @@ CC = clang
 ASM = nasm
 FLAGS = -Wall -Wextra -nostdlib -fno-builtin -fno-stack-protector
 
-OBJS = build/main.o build/io.s.o build/string.o build/math.o build/quit.o build/io.o
+OBJS = build/main.o build/string.o build/math.o build/io.o build/syscall.o
 BIN  = build/poly
 
 $(BIN): $(OBJS)
@@ -23,13 +23,8 @@ build/io.o: src/io.c src/io.h
 
 
 # asm
-
-build/quit.o: src/quit.s
+build/syscall.o: src/syscall.s
 	$(ASM) -f elf64 $< -o $@
-
-build/io.s.o: src/io.s
-	$(ASM) -f elf64 $< -o $@
-
 
 .PHONY: clean run
 clean:
