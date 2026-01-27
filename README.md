@@ -30,7 +30,7 @@
 
 `make`
 
-`make clean` to clean 
+`make clean` to clean
 
 # to run this project:
 `make run`

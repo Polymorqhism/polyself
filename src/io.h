@@ -4,3 +4,4 @@ void puts(char *buf);
 void puti(int number);
 void write(char *buf, size_t size);
 void read(char *buf, size_t size);
+void printp(char *fmt, void *fmts[]);
