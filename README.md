@@ -7,9 +7,8 @@
 - x86-64; targeted for linux
 - requires clang (gcc if Makefile is tweaked)
 
-
-## printing:
-*note that there is no `printf()` functionality, use `puti()` and `puts()` for integers and strings respectively*
+> [!CAUTION]
+> `printp()` is UNSAFE
 
 - string:
     - `unsigned int strlen(const char *string);`
@@ -21,6 +20,7 @@
     - `extern void read(char *buf, unsigned long long size);`
     - `void puts(char *string);`
     - `void puti(int var);`
+    - `void printp(char* fmt, void **fmts);`
 
 - math, memory:
     - tbd
