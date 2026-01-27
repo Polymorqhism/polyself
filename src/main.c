@@ -7,9 +7,9 @@
  this is only an example file
 */
 
-void quit()
+void quit(int exit)
 {
-    syscall6(60, 0, 0, 0, 0, 0, 0);
+    syscall6(60, exit, 0, 0, 0, 0, 0);
 }
 
 
@@ -23,7 +23,7 @@ void test_print()
     printp("one? %d\n", args1);
 }
 
-void _start(void)
+int main()
 {
     test_print();
 
@@ -48,5 +48,10 @@ void _start(void)
     read(buf, 15);
     puts(buf);
 
-    quit();
+    return 0;
+}
+
+void _start(void)
+{
+    quit(main());
 }
