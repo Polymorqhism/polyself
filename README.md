@@ -7,6 +7,9 @@
 </p>
 
 <h1 align="center">polyself</h1>
+<p align="center">
+  Useless; impractical.
+</p>
 
 - Uses syscalls to re-create parts of libc.
 - Do NOT actually use this for anything.
