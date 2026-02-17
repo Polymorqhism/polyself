@@ -1,11 +1,18 @@
-# polyself
-> rely on thyself
+<p align="center">
+  <img
+    src="polyself.png"
+    alt="polyself"
+    width="120"
+  />
+</p>
 
-- uses raw assembly to re-create parts of libc
-- do NOT actually use this for anything
-- learning purposes
-- x86-64; targeted for linux
-- requires clang (gcc if Makefile is tweaked)
+<h1 align="center">polyself</h1>
+
+- Uses syscalls to re-create parts of libc.
+- Do NOT actually use this for anything.
+- Created for learning purposes.
+- x86-64; targeted for Linux.
+- Requires clang (gcc if Makefile is tweaked).
 
 > [!CAUTION]
 > `printp()` is UNSAFE
@@ -26,14 +33,13 @@
     - tbd
 
 
-# to build this project:
+# Build
 
 `make`
 
-`make clean` to clean 
-
-# to run this project:
+# Run
 `make run`
 
 
-⚠️ **DO NOT* use this project for production*  ⚠️
+> [!CAUTION]
+> Do not use this code for production.
