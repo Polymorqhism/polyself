@@ -11,14 +11,14 @@
   Useless; impractical.
 </p>
 
-- Uses syscalls to re-create parts of libc.
-- Do NOT actually use this for anything.
+- Uses syscalls to re-create parts of libc, more information within the code.
+- Do NOT use this for production.
 - Created for learning purposes.
 - x86-64; targeted for Linux.
 - Requires clang (gcc if Makefile is tweaked).
 
 > [!CAUTION]
-> `printp()` is UNSAFE
+> `printp()` is UNSAFE, no checks are implemented
 
 - string:
     - `unsigned int strlen(const char *string);`
@@ -33,15 +33,11 @@
     - `void printp(char* fmt, void **fmts);`
 
 - math, memory:
-    - tbd
+    - to be done
 
 
-# Build
-
-`make`
-
-# Run
-`make run`
+## Usage:
+- `make run`
 
 
 > [!CAUTION]
